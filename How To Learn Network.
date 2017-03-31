@@ -1,0 +1,45 @@
+A very good diagram about network protocol stack
+ 
+https://s-media-cache-ak0.pinimg.com/736x/f8/2a/be/f82abe3c467a203a145ab90ccfa64763.jpg
+ 
+In a 4 layer model:
+ 
+Layer 1,2 (Network Access) Switches:
+Switches:
+https://www.safaribooksonline.com/library/view/ethernet-switches/9781449367299/ch01.html
+ 
+VLANs:
+https://www.thomas-krenn.com/en/wiki/VLAN_Basics
+ 
+Port aggregation: PAgP (Cisco proprietary), LACP
+ 
+Layer 2,3:
+ARP
+Nice quick read about TCP/IP https://linuxacademy.com/howtoguides/posts/show/topic/12806-tcpip-network-protocol
+ 
+Routing (in 3 parts):
+http://www.think-like-a-computer.com/2011/07/18/how-routing-works/
+http://www.think-like-a-computer.com/2011/08/24/the-routing-table/
+https://www.think-like-a-computer.com/2011/08/24/ip-routing/
+ 
+Check what is MTU, TCP 3-way handshake and TCP window size.
+ 
+Layer 4:
+ 
+Routing protocols:
+WAN: BGP – the only protocol used for global routing on the Internet
+LAN: OSPF (Most popular, open standard), EGRP(Cisco proprietary, similar to OSPF), IS-IS (just check), RIP (OLD, some older versions use broadcast instead of multicast which is bad, almost not used but simple to understand)
+ 
+Tunneling:
+GRE (popular in virtual networking and VPNs, I guess Docker overlay networking uses it), PPP, IPSec
+ 
+Also read about:
+IPv6
+Auto-configuration/discovery DHCPv4/v6 (IPv6 can work without DHCP o_O), just check what is CDP/LLDP, IPv6 NDP
+Network level redundancy: VRRP/HSRP(Cisco proprietary)/CARP (first two very similar but incompatible, CARP comes from BSD and mostly used on BSD flavors)
+VoIP: SIP
+LTMs: load balancing and sticky session technics
+GSLB (Global server load balancing), Anycast load balancing/redundancy (sometimes used locally using OSPF or other dynamic routing protocol)
+ 
+Most critical topics are in red
+Next step blue
