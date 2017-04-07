@@ -1,1 +1,3 @@
 Machine Learning Glossary: http://www.wildml.com/deep-learning-glossary/
+
+http://www.cs.toronto.edu/~hinton/papers.html#2009
