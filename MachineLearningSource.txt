@@ -1,3 +1,7 @@
 Machine Learning Glossary: http://www.wildml.com/deep-learning-glossary/
 
 http://www.cs.toronto.edu/~hinton/papers.html#2009
+
+Deep Learning Book: https://www.deeplearningbook.org/
+
+UCL Course on RL(Reinforcement learning): http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html
