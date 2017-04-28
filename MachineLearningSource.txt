@@ -11,3 +11,11 @@ UCL Course on RL(Reinforcement learning): http://www0.cs.ucl.ac.uk/staff/d.silve
 http://cs231n.github.io/neural-networks-3/
 http://cs231n.github.io/convolutional-networks/#pool
 https://www.youtube.com/playlist?list=PLwQyV9I_3POsyBPRNUU_ryNfXzgfkiw2p
+
+
+Word2Vec： https://web.archive.org/web/20160311161826/http://cs224d.stanford.edu/lecture_notes/LectureNotes1.pdf
+Parameter Server： https://www.cs.cmu.edu/~muli/file/parameter_server_osdi14.pdf
+Tensorflow： http://download.tensorflow.org/paper/whitepaper2015.pdf
+Distributed Snapshot： https://blog.acolyer.org/2015/04/22/distributed-snapshots-determining-global-states-of-distributed-systems/
+[Paper]Distributed Representations of Words and Phrases and their Compositionality: https://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf
+Playground Tensorflow: http://playground.tensorflow.org/
