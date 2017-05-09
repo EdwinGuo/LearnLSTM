@@ -1,0 +1,44 @@
+Reverse proxy:
+haproxy反响代理简单使用
+安装
+配置文件：/etc/haproxy/haproxy.cfg
+[plain] view plain copy
+defaults  
+    mode                    http  
+    log                     global  
+    option                  httplog  
+    option                  dontlognull  
+    option http-server-close  
+    option forwardfor       except 127.0.0.0/8  
+    option                  redispatch  
+    retries                 3  
+    timeout http-request    10s  
+    timeout queue           1m  
+    timeout connect         10s  
+    timeout client          1m  
+    timeout server          1m  
+    timeout http-keep-alive 10s  
+    timeout check           10s  
+    maxconn                 3000  
+  
+# 定义状态查看和管理信息  
+listen stats  
+        mode    {http|tcp}  
+        bind    *:1080  
+        stats   enable  
+        stats   hide-version  
+        stats   uri     /haproxyadmin?stats  
+        stats   realm   Haproxy \ Statistics  
+        stats   auth    admin:admin  
+        stats   admin if TRUE  
+# 定义前端监听地址  
+frontend web  
+        bind    *:80  
+        mode    {http:tcp}  
+        default_backend servers  
+  
+# 定义后端服务地址  
+backend servers  
+        balance {roundrobin | leastconn}  
+        server  first   192.168.10.11:80        check   maxconn 4000  
+        server  second  192.168.10.12:80        check   maxconn 3000  
